@@ -1,0 +1,13 @@
+type Review {
+    reviewCode : Long
+    productCode : Long
+    content : String
+    score : Int
+}
+
+input ReviewInput {
+    reviewCode : Long
+    productCode : Long
+    content : String
+    score : Int
+}
