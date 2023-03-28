@@ -30,6 +30,8 @@ dependencies {
     // r2dbc
     implementation 'org.springframework.boot:spring-boot-starter-data-r2dbc'
 
+    implementation 'org.springdoc:springdoc-openapi-webflux-ui:1.6.15'
+
     // h2
     runtimeOnly 'com.h2database:h2'
     // r2dbc
