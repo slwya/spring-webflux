@@ -1,0 +1,24 @@
+scalar Long
+
+type Query {
+    # 상품 조회
+    productByCode(productCode: Long!) : Product
+
+    # 상품리스트 조회
+    products : [Product]
+
+    # 상품평 조회
+    reviewByProductCode(reviewCode: Long) : Review
+}
+
+type Mutation {
+    # 상품 입력
+    insertProduct(input : ProductInput) : Boolean
+    # 상품 삭제
+    deleteProduct(productCode: Long!) : Boolean
+
+    # 상품평 입력
+    insertReview(input : ReviewInput) : Boolean
+    # 상품평 삭제
+    deleteReview(reviewCode: Long!) : Boolean
+}

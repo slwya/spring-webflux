@@ -1,0 +1,11 @@
+type Product {
+    productCode : Long
+    productName : String
+    price : Long
+}
+
+input ProductInput {
+    productCode : Long
+    productName : String
+    price : Long
+}
