@@ -43,6 +43,9 @@ public class ProductService {
     public Mono<Void> insertProduct(ProductInput productInput) {
         return productRepository.save(new Product(productInput));
     }
+    public Mono<Void> insertProduct(Mono<ProductInput> productInput) {
+        return productRepository.save(new Product(productInput.block()));
+    }
 
     /**
      * 상품 삭제
